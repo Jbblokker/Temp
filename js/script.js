@@ -1,7 +1,7 @@
 function ftoC(valNum) {
   valNum = parseFloat(valNum);
   const result =(valNum-32)/1.8;
-  return document.getElementById("celcius").innerHTML = (Math.round(result));
+  return document.getElementById("celsius").innerHTML = (Math.round(result));
 }
 
 
