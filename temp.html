@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Yuji+Boku&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Temperature Converter</h1>
+        <h2>Helping all who have been crippled by the Fahrenheit system.</h2>
+        <form class="convert">
+            <label class = "">Fahrenheit: </label>
+            <input type = "number" class="temp-input"
+                placeholder="Enter your value here" 
+                oninput="ftoC(this.value)"
+                onchange="ftoC(this.value)"
+            >
+        </form>
+        <p>Celsius:<span id = "celsius"></span></p>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
