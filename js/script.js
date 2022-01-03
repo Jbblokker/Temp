@@ -3,6 +3,8 @@ function ftoC(valNum) {
   const result =(valNum-32)/1.8;
   console.log(document.getElementById("celsius").innerHTML = (Math.round(result)));
   return document.getElementById("celsius").innerHTML = (Math.round(result));
+window.addEventListener("load", listen, false);
+
 }
 
 // This is the original function I started with to get an idea how I wanted it to perform on the webpage

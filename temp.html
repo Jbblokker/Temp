@@ -13,13 +13,14 @@
     <body>
         <h1>Temperature Converter</h1>
         <h2>Helping all who have been crippled by the Fahrenheit system.</h2>
-        <form class="convert">
-            <label class = "">Fahrenheit: </label>
-            <input type = "number" class="temp-input"
-                placeholder="Enter your value here" 
-                oninput="ftoC(this.value)"
-                onchange="ftoC(this.value)"
+        <form class="convert" method="post" action="hw07.php">
+            <label>Fahrenheit: </label>
+            <input type="text" 
+                id="number" 
+                class="temp-input"
+                placeholder="Enter your Temp"  
             >
+            <input type="button" name="submit" value="Convert" id="Convert" >
         </form>
         <p>Celsius:<span id = "celsius"></span></p>
         <script src="node_modules/jquery/dist/jquery.js"></script>
