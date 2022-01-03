@@ -1,10 +1,14 @@
-function ftoC(valNum) {
-  valNum = parseFloat(valNum);
-  const result =(valNum-32)/1.8;
-  console.log(document.getElementById("celsius").innerHTML = (Math.round(result)));
-  return document.getElementById("celsius").innerHTML = (Math.round(result));
 window.addEventListener("load", listen, false);
 
+function listen() {
+  document.getElementById("Convert").onclick = ftoC;
+}
+
+function ftoC() {
+  let temp = Number(document.getElementById("number").value);
+  const result =(temp-32)/1.8;
+  console.log(Math.round(result) + "°");
+  return document.getElementById("celsius").innerHTML = (Math.round(result) + "°");
 }
 
 // This is the original function I started with to get an idea how I wanted it to perform on the webpage
