@@ -49,6 +49,23 @@ label {
     background-color: gray ;
 } 
 
+.save-button:hover{
+    background-color: gray ;
+} 
+.save-button{ 
+    background-color: black;
+    padding: 10px;
+    font: bold;
+    color: white;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
 .previous-temp{
     max-width: 500px;
     text-align: center;
