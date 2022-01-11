@@ -13,6 +13,7 @@
     <body>
         <h1>Temperature Converter</h1>
         <h2>Helping all who have been crippled by the Fahrenheit system.</h2>
+
         <form class="convert" method="post" action="hw07.php">
             <label>Fahrenheit: </label>
             <input type="text" 
@@ -22,12 +23,17 @@
             >
             <input type="button" name="submit" value="Convert" id="Convert" class="convert-button" >
         </form>
+
         <p id = "celsius">Celsius:</p>
+
         <button id="save" class="save-button">Save Conversion</button>
+        <button id="viewPrevious" class="save-button">View Conversion</button>
+
         <Fieldset class="previous-temp">
             <legend>Previous Temperature</legend>
             <div id="tempOutput"></div>
         </Fieldset>
+
         <script src="js/script.js"></script>
     </body>
 </html>
